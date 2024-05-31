@@ -6,14 +6,14 @@ interface buttomProps {
 }
 
 export function Buttom({ title, className }: buttomProps) {
-  return(
+  return (
     <button
-    className={twMerge(
-      " w-auto px-[16px] h-[38px] rounded-[4px] transition-all duration-300  text-slate-100 text-[12px]",
-      className
-    )}
-  >
-    {title}
-  </button>
-  )
+      className={twMerge(
+        " w-auto px-[16px] h-[38px] rounded-[4px] transition-all duration-300  text-slate-100 text-[12px]",
+        className
+      )}
+    >
+      {title}
+    </button>
+  );
 }

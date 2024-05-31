@@ -1,5 +1,5 @@
 import type { ItemBase, ListProps } from "@/app/components/generic-list/models";
-import { twMerge } from 'tailwind-merge'
+import { twMerge } from "tailwind-merge";
 
 export const List = <T extends ItemBase>({
   children,
@@ -12,10 +12,11 @@ export const List = <T extends ItemBase>({
     <div className="list-content">
       {header}
 
-      <ul  className={twMerge(classeName)}>
+      <ul className={twMerge(classeName)}>
         {items.map((item, index) => children({ item, index }))}
       </ul>
       {footer}
+      {}
     </div>
   );
 };

@@ -9,7 +9,7 @@ export interface ListItemInjectedProps<T extends ItemBase> {
 
 export interface ListProps<T extends ItemBase> {
   items: T[];
-  classeName?: string
+  classeName?: string;
   children: (props: ListItemInjectedProps<T>) => ReactNode;
   header?: ReactNode;
   footer?: ReactNode;
