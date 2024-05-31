@@ -16,11 +16,11 @@ export function Header() {
         className="w-full h-full object-cover absolute top-0 left-0"
         alt="..."
       />
-      <div className="relative  flex flex-col gap-8 justify-center items-center mb-[75px]">
+      <div className="relative  flex flex-col lg:gap-8 gap-4 justify-center items-center mb-[75px]">
         <motion.div
            {...animePropsCard}
            transition={{duration: 1.2}}
-         className="flex flex-col lg:leading-[87px] loading-[60px] font-bold lg:text-[80px] text-[50px] text-center">
+         className="flex flex-col lg:leading-[87px] loading-[60px] font-bold lg:text-[80px] text-[40px] text-center">
         <h1 >Transforming </h1>
         <h1>life into technology</h1>
         </motion.div>
@@ -28,7 +28,7 @@ export function Header() {
         <motion.p 
          {...animeProps}
          transition={{duration: 1.5, delay: 0.5}}
-        className="font-light lg:text-[20px] text-[16px] lg:w-[606px] w-[500px] text-center">
+        className="font-light lg:text-[20px] text-[14px] lg:w-[606px] w-[400px] text-center">
           solotec aims to provide solutions for your technological projects and
           beyond, supporting your objectives and projects in your daily life in
           a multitude of ways.
@@ -45,7 +45,7 @@ export function Header() {
        </div>
       </div>
 
-      <div className="lg:px-0 px-5 relative flex flex-col gap-2 justify-center items-center">
+      <div className="lg:px-0 px-2 relative flex flex-col gap-2 justify-center items-center">
         <p className="text-[14px] font-light">
         We have <span className="text-[#FFC759]">240+</span> Our clients and partners
         </p>
