@@ -1,6 +1,24 @@
 import { Buttom } from "@/app/components/ui/buttom";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+
+
+// const schemaForm = z.object({
+//   password: z.string().min(5),
+//   email: z.string().email()
+// })
+
+// type SchemaForm = z.infer<typeof schemaForm>
+
 
 export function Form() {
+
+
+  // function handleFormData(data: SchemaForm){
+  //   console.log(data)
+  // }
+
   return (
     <form
       action=""
@@ -16,6 +34,7 @@ export function Form() {
           </label>
           <input
             type="text"
+      
             className="px-[28px] py-[20px] 
                 border-[1px] rounded-md border-[#9E9E9E] 
                  text-[14px] text-[#AAAA] placeholder:text-[#AAAA] outline-[#0B63E5]
@@ -29,6 +48,7 @@ export function Form() {
           </label>
           <input
             type="text"
+       
             className="px-[28px] py-[20px] 
                 border-[1px] rounded-md border-[#9E9E9E] 
                  text-[14px] text-[#AAAA] placeholder:text-[#AAAA] outline-[#0B63E5]
@@ -41,6 +61,7 @@ export function Form() {
       <Buttom
         className="bg-[#0B63E5] text-[14px] font-medium w-full h-[60px] hover:bg-[#0b62e5cd] duration-300 ease-out"
         title="Log In"
+  
       />
       <p className="text-[15px] font-bold text-[#0B63E5] hover:cursor-pointer  hover:text-[#0b62e5cd] duration-300 ease-out">Create an account</p>
       </div>
