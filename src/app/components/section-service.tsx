@@ -24,7 +24,7 @@ export function Service() {
 
       <List<datacartProps>
         items={dateCart}
-        classeName="relative grid grid-cols-2 grid-rows-2 gap-6 "
+        classeName="relative grid lg:grid-cols-2 grid-cols-1 grid-rows-2 gap-6 "
       >
         {({ item }) => (
           <div className="bg-[#E6E8EC] w-[648px] h-[248px] rounded-[20px] 

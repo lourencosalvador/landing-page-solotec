@@ -10,7 +10,7 @@ import { animeProps, animePropsCard, animePropsImg } from "../animation/animate"
 export function Choose() {
   return (
     <div
-      className="w-full h-full -z-10   overflow-hidden
+      className="w-full h-full -z-10   overflow-hidden lg:px-0  px-5
      relative bg-[#FFFF] flex justify-center items-center"
     >
       <GridContainer className="gap-[80px]">
@@ -22,7 +22,7 @@ export function Choose() {
           why choose <br /> Solutec ?
         </motion.h1>
 
-        <div className="*:text-[#061C3D] *:text-[18px] *:w-[550px] flex flex-col gap-6 mb-[52px]">
+        <div className="*:text-[#061C3D] *:text-[18px] lg:*:w-[550px] *:w-[100%] flex flex-col gap-6 mb-[52px]">
           <p>
             Because is semper justo quis tempor. Praesent molestie, lorem sed
             imperdiet tempor, libero urna semper urna, facilisis vulputate velit
@@ -65,7 +65,7 @@ export function Choose() {
         {...animePropsImg}
         transition={{duration: 1, delay: 0.8}}
       >
-        <Image src={quadre} alt="..." />
+        <Image src={quadre} alt="..." className="lg:flex hidden"/>
       </motion.div>
       </GridContainer>
     </div>
